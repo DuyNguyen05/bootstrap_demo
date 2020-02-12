@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "MerriweatherSans";
+  src: url("~fonts/MerriweatherSans-Regular.eot");
+  src: url("~fonts/MerriweatherSans-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("~fonts/MerriweatherSans-Regular.woff2") format("woff2"),
+    url("~fonts/MerriweatherSans-Regular.woff") format("woff"),
+    url("~fonts/MerriweatherSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-family: "MerriweatherSans";
+  font-weight: 400px;
+  font-size: 16px;
+}

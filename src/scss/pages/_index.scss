@@ -1,0 +1,31 @@
+.index-page {
+  &__section {
+    min-height: 100px;
+    background-color: violet;
+    margin-bottom: 20px;
+    
+    // @media screen and (max-width: $md) {
+    //   background-color: red;
+    // }
+
+    // @media screen and (min-width: $lg) {
+    //   background-color: green;
+    // }
+
+    @include respond-below('md') {
+      background-color: green;
+
+      &__heading {
+        color: blue;
+      }
+    }
+    .intro {
+      &__heading {
+        color: red;
+      }
+
+      &__desc {
+      }
+    }
+  }
+}
