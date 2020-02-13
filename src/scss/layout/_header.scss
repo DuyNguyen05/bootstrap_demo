@@ -1,0 +1,49 @@
+@include respond-above("lg") {
+	.header {
+		width: 100%;
+		z-index: 10000;
+		background-color: transparent;
+		
+		&__heading {
+			color: $default-para-color !important;
+			font-size: 1.5rem;
+
+			&:hover {
+				color: $primary-color !important;
+			}
+		}
+	
+		&__item {
+			color: $default-para-color !important;
+	
+			&:hover {
+				color: $primary-color !important;
+			}
+		}
+	
+	}
+}
+
+@include respond-below("lg") {
+	.header {
+		width: 100%;
+		z-index: 10000;
+		background-color: $primary-color;
+	
+		&__heading {
+			color: $default-color;
+			
+			&:hover {
+				color: $default-color;
+			}
+		}
+	
+		&__item {
+			color: $default-color;
+	
+			&:hover {
+				color: $primary-bg-color !important;
+			}
+		}
+	}
+}
