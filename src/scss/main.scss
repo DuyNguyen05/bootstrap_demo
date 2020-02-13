@@ -1,5 +1,5 @@
 @import 'vendors/bootstrap_override_variables';
-@import '~bootstrap/scss/bootstrap';
+@import 'bootstrap';
 
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
@@ -27,5 +27,3 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import 'pages/about';
 @import 'pages/index';
 
-@import 'utils/variables';
-@import 'utils/mixins';

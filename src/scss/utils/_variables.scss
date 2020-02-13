@@ -1,24 +1,29 @@
 $primary-color: #ffffff;
-$primary-bg-color: #2F55D4;
-$primary-bg-color-hover: #2443ac;
-$primary-border-color: #2F55D4;
-$primary-text-color: #8492A6;
+$primary-color-hover: #ffffff;
+$primary-bg-color: #f4623a;
+$primary-bg-color-hover: #ee3e0d;
+
+$default-color: #212529;
+$default-color-hover: #000000;
+$default-bg-color: #ffffff;
+$default-bg-color-hover: #f3e3e3;
+$default-para-color: rgba(255, 255, 255, 0.75);
+
+$text-content: #6C757D;
 
 $button-colors: (
   primary: (
-    color: #ffffff,
-    color-hover: #ffffff,
-    bg-color: #2F55D4,
-    bg-color-hover: #2443ac,
-    border-color: #2F55D4,
+    color: $primary-color,
+    color-hover: $primary-color-hover,
+    bg-color: $primary-bg-color,
+    bg-color-hover: $primary-bg-color-hover,
   ),
 
   default: (
-    color: #2F55D4,
-    color-hover: #ffffff,
-    bg-color: #ffffff,
-    bg-color-hover: #2F55D4,
-    border-color: #2F55D4,
+    color: $default-color,
+    color-hover: $default-color-hover,
+    bg-color: $default-bg-color,
+    bg-color-hover: $default-bg-color-hover,
   )
 );
 

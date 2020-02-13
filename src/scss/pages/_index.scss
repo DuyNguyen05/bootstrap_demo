@@ -1,30 +1,136 @@
 .index-page {
+  .bg-image {
+    min-height: 900px;
+    background: url("~images/Rectangle.png") no-repeat center center;
+    background-size: cover;
+    color: $primary-color;
+  }
+
   &__section {
-    min-height: 100px;
-    background-color: violet;
-    margin-bottom: 20px;
-    
-    // @media screen and (max-width: $md) {
-    //   background-color: red;
-    // }
+    width: 100%;
+    background-color: $primary-color;
 
-    // @media screen and (min-width: $lg) {
-    //   background-color: green;
-    // }
-
-    @include respond-below('md') {
-      background-color: green;
-
+    .intro {
+      text-align: center;
+      padding: 127px 0;
+      
       &__heading {
-        color: blue;
+        color: $primary-color;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        max-width: 600px;
+        margin: 10px;
+      }
+
+      &__line {
+        background-color: $primary-bg-color;
+        width: 52px;
+        height: 3.5px;
+      }
+
+      &__para {
+        margin: 10px;
+        max-width: 500px;
       }
     }
-    .intro {
-      &__heading {
-        color: red;
-      }
 
-      &__desc {
+    &:nth-child(2) {
+      background-color: $primary-bg-color;
+      
+      .slogan {
+        padding: 127px 0;
+        
+        &__heading {
+          color: $primary-color;
+        }
+
+        &__line {
+          background-color: $primary-color;
+          width: 52px;
+          height: 3.5px;
+        }
+
+        &__para {
+          font-family: $font-merriweather;
+          color: $default-para-color;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .service {
+        padding: 127px 0;
+
+        &__heading {
+          color: $default-color;
+          font-size: 1.25rem;
+        }
+
+        &__para {
+          color: $text-content;
+          max-width: 191px;
+        }
+      }
+    }
+    
+    &:nth-child(4) {
+      .images {
+        padding-top: 127px;
+
+        &__img {
+          padding: 0;
+        }
+        
+        &__img-detail {
+          width: 100%;
+        }
+
+        &__show-text {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $primary-bg-color;
+          opacity: 0;
+          transition: all 1s ease-out;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &:nth-child(5) {
+      .download {
+        padding: 127px 0;
+        background-color: #343A40; 
+      }
+    }
+
+    &:nth-child(6) {
+      .contact {
+        padding: 127px 0;
+        
+        &__heading {
+          color: $default-color; 
+        }
+
+        &__para {
+          color: $text-content;
+          max-width: 584px;
+          margin: 30px;
+        }
+
+        &__icon {
+          color: $text-content;
+        }
+
+        &__phone {
+          color: $default-color;
+        }
       }
     }
   }
